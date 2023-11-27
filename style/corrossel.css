@@ -1,0 +1,38 @@
+main { 
+    background-color: white;
+}
+
+.carrossel {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 80px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+.swiper {
+    width: 100%;
+}
+
+.swiper-title {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(80, 151, 9);
+    border-radius: 20px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: block;
+    color: black;
+    top: 60%;
+}
+
+.botao__carrossel:hover {
+    background: darkgray;
+}
+

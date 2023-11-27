@@ -1,0 +1,39 @@
+.infosProjects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #ffffff;
+    width: 80%;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.707);
+}
+
+.infos__paragrafo {
+    margin: 10px;
+    text-align: left;
+}
+
+li {
+    margin: 15px;
+}
+
+.infos {
+    margin: 15px;
+    padding: 30px;
+    background-color: rgb(117, 180, 54);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.707);
+}
+
+.dev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dev div {
+    margin: 0 50px 0 50px;
+}
+

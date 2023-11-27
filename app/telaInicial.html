@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recycle Info</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/info.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/corrossel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Vina+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <h2 class="header__titulo">
+        Recycle Info
+    </h2>
+    <div class="header__tabs">
+        <a class="tab" href="telaInicial.html">Inicio</a>
+
+        <a class="tab" href="saibaMais.html">Saiba Mais</a>
+
+        <a class="tab" href="maisInfos.html">Mais Informações</a>
+
+    </div>
+
+</header>
+
+<main>
+
+    <section class="info">
+
+        <div class="text">
+            <h1 class="info__titulo">
+                RECICLAR
+            </h1>
+            <p class="info__paragrafo">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software
+                like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div class="carrossel">
+            <!-- Slider main container -->
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="../assets/Plastico.png" alt="Lixo PLastico" onclick="irParaOutraPagina('plastico')"></div>
+                        <div class="swiper-slide"><img src="../assets/Metal.png" alt="Lixo Organico" onclick="irParaOutraPagina('metal')"></div>
+                        <div class="swiper-slide"><img src="../assets/Vidro.png" alt="Lixo Vidro" onclick="irParaOutraPagina('vidro')"></div>
+                        <div class="swiper-slide"><img src="../assets/Papel.png" alt="Lixo Pael" onclick="irParaOutraPagina('papel')"></div>
+                        <div class="swiper-slide"><img src="../assets/Organizacao.png" alt="Lixo Metal" onclick="irParaOutraPagina('organico')"></div>
+    
+                    </div>
+    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+    
+        </div>
+        
+    </section>
+
+    <section class="imagem">
+
+        <img src="/assets/reciclagemavif.avif" alt="Foto de Reciclagem">
+
+    </section>
+
+   
+
+</main>
+
+<footer>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        spaceBetween: 15,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+
+    function irParaOutraPagina(id) {
+        window.location.href = `saibaMais.html#${id}`;
+    }
+
+</script>
+</body>
+
+</html>
